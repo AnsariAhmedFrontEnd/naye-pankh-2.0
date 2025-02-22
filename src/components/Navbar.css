@@ -1,0 +1,9 @@
+.hover-effect {
+    transition: color 0.3s ease-in-out, transform 0.2s;
+  }
+  
+  .hover-effect:hover {
+    color: #03A29A !important; 
+    transform: scale(1.05);   
+  }
+  
