@@ -1,9 +1,15 @@
 import Navbar from "./components/Navbar";
+import Hero from "./components/Hero";
+import ProgressTracker from "./components/ProgressTracker";
 
-function App() {
+const App = () => {
   return (
-   <Navbar />
+    <>
+      <Navbar />
+      <Hero />
+      <ProgressTracker />
+    </>
   );
-}
+};
 
 export default App;

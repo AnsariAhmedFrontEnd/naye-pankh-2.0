@@ -3,7 +3,7 @@ const Hero = () => {
       <div className="row justify-content-center">
         <div className="col-12 text-center">
           <img 
-            src="/assets/Hero.avif" 
+            src="/assets/Hero.png" 
             alt="Hero" 
             className="img-fluid w-100" 
             style={{ maxHeight: "500px", objectFit: "cover" }}
