@@ -1,6 +1,10 @@
 .hover-effect {
     transition: color 0.3s ease-in-out, transform 0.2s;
   }
+
+  .nav-color {
+    background-color: #03A29A;
+  }
   
   .hover-effect:hover {
     color: #03A29A !important; 

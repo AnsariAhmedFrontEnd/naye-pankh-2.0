@@ -1,13 +1,13 @@
 import DonationCard from "./components/DonationCard";
 import Navbar from "./components/Navbar";
-// import Hero from "./components/Hero";
+import Hero from "./components/Hero";
 // import ProgressTracker from "./components/ProgressTracker";
 
 const App = () => {
   return (
     <>
       <Navbar />
-      {/* <Hero /> */}
+      <Hero />
       {/* <ProgressTracker /> */}
       <DonationCard />
     </>
