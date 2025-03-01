@@ -3,11 +3,11 @@
   }
 
   .nav-color {
-    background-color: #03A29A;
+    background-color: #004085;
   }
   
   .hover-effect:hover {
-    color: #03A29A !important; 
+    color: rgba(255, 255, 255, 0.5) !important; 
     transform: scale(1.05);   
   }
   

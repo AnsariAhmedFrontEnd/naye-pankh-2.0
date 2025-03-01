@@ -5,10 +5,10 @@ const CircularProgress = ({ progress, image }) => {
   return (
     <div className="position-relative d-flex justify-content-center align-items-center mt-3" style={{ width: "200px", height: "200px", margin: "auto" }}>
       <svg width="200" height="200">
-        <circle cx="100" cy="100" r="90" stroke="#e0e0e0" strokeWidth="10" fill="none" />
+        <circle cx="100" cy="100" r="90" stroke="#E0E0E0" strokeWidth="10" fill="none" />
         <circle
           cx="100" cy="100" r="90"
-          stroke="#03A29A" strokeWidth="20" fill="none"
+          stroke="#004085" strokeWidth="20" fill="none"
           strokeDasharray="565.48"
           strokeDashoffset={565.48 - (progress * 5.6548)}
           strokeLinecap="round"
@@ -36,16 +36,16 @@ const DonationCard = ({ title, goal, milestones }) => {
   };
 
   return (
-    <div className="card p-3 text-center shadow-lg">
-      <h4 className="fw-bold">{title}</h4>
-      <p className="text-muted">Goal: ₹{goal.toLocaleString()}</p>
+    <div className="card p-3 text-center shadow-lg" style={{ borderColor: "#004085" }}>
+      <h4 className="fw-bold" style={{ color: "#004085" }}>{title}</h4>
+      <p className="fw-semibold" style={{ color: "#28A745" }}>Goal: ₹{goal.toLocaleString()}</p>
 
       <CircularProgress progress={progress} image={currentMilestone.image} />
 
-      <p className="fw-semibold mt-3">{currentMilestone.title}</p>
-      <p className="fw-semibold">Raised: ₹{donation.toLocaleString()} / ₹{goal.toLocaleString()}</p>
+      <p className="fw-semibold mt-3" style={{ color: "#DC3545" }}>{currentMilestone.title}</p>
+      <p className="fw-semibold" style={{ color: "#28A745" }}>Raised: ₹{donation.toLocaleString()} / ₹{goal.toLocaleString()}</p>
 
-      <button className="btn" onClick={() => donate(5000)} disabled={donation >= goal} style={{backgroundColor:"#03A29A", color:"white"}}>
+      <button className="btn" onClick={() => donate(5000)} disabled={donation >= goal} style={{ backgroundColor: "#004085", color: "white" }}>
         {donation >= goal ? "Goal Achieved 🎉" : "Donate ₹5000"}
       </button>
     </div>
@@ -66,7 +66,7 @@ const DonationSection = () => {
 
   return (
     <div className="container mt-5">
-      <h2 className="fw-bold text-center mb-4">Donation Campaigns</h2>
+      <h2 className="fw-bold text-center mb-4" style={{ color: "#004085" }}>Donation Campaigns</h2>
       <div className="row">
         <div className="col-md-4 mb-4">
           <DonationCard title="Education for Children" goal={goal} milestones={milestones} />

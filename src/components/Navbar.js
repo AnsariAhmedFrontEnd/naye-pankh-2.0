@@ -3,7 +3,7 @@ import "./Navbar.css";
 
 const Navbar = () => {
   return (
-    <nav className="navbar navbar-expand-lg bg-dark">
+    <nav className="navbar navbar-expand-lg nav-color">
       <div className="container-fluid px-5 d-flex justify-content-between align-items-center">
 
         {/* Logo */}
